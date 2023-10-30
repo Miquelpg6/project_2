@@ -52,9 +52,12 @@ Now that I had both dataframes I proceed to import them into a new jupyter noteb
     I merged the df_federació with the column normal heart rate creating a new column called Match Heart Rate in order to see wich was the heart rate on match days. I displayed this in a chart to see which was the average heart rate in match days. 
     We can see that there isn't a regular heart rate per match day, every match has slightly differnt heart rates. 
     An interesting conclusion is that in on  match days my heart rate isn't lower than 42 and not higher than 57.
+    The empty datapoints are the matches that I didn't play due to injury.
 
-        CHART MATCH HEART RATE
-        CHART PER ROUND
+ ![image](https://github.com/Miquelpg6/project_2/blob/main/images/match_day_heart_evolution.png?raw=true)
+
+ ![image](https://github.com/Miquelpg6/project_2/blob/main/images/matchday_hr_histogram.png?raw=true)
+
 
 
     2. DAILY HEART RATE:
@@ -62,23 +65,27 @@ Now that I had both dataframes I proceed to import them into a new jupyter noteb
     With this chart I wanted to analyzed which is the average heart rate per day. 
     We can see that on weekend is where I have the highest average heart rate. Mondays have the lowest average, this is probably due to the fatigue of the weekends match.
 
-        CHART MITJANES DIES
+ ![image](https://github.com/Miquelpg6/project_2/blob/main/images/daily_hr.png?raw=true)
 
 
-    3. HISTOGRAM: NORMAL HEART RATE VS MATCH DAY HEART RATE:
+
+    3. HISTOGRAM: AVERAGE HEART RATE VS MATCH DAY HEART RATE:
 
     With this histogram I wanted to represent the distribution of the average heart rate and compare it with the distribution of the days that I had match. We can see that in normal days the heart rate are wider going from a minimum of 38 hr/day to a maximum of 78 hr/day. On the other hand, on match days the distribution is narrower going from a minimum of 42 hr/day to a maximum of 57 hr/day. 
 
-        HISTOGRAM HEART RATE
+![image](https://github.com/Miquelpg6/project_2/blob/main/images/matchday_hr_histogram.png?raw=true)
 
+ ![image](https://github.com/Miquelpg6/project_2/blob/main/images/normal_hr_histogram.png?raw=true)
 
-    4. VIOLIN PLOT: NORMAL HEART RATE VS MATCH DAY HEART RATE:
+ ![image](https://github.com/Miquelpg6/project_2/blob/main/images/normalhr_vs_matchhr.png?raw=true)
+
+    4. VIOLIN PLOT: AVERAGE HEART RATE VS MATCH DAY HEART RATE:
 
     Violin plot normal heart rate vs match heart rate: In this final Violin plot I represented the difference between the daily heart rate and the match day heart rate. 
     We can see that there is a slightly difference of 2 heartbeats between both averages. If in the previus histogram we could see how the distribution is norrower on match days in this one we can se that the average of match days is higher.
     This can be due to the fact that on match day I can be sometimes more nervous despite being relaxed the whole day.
 
-        VIOLIN PLOT
+![image](https://github.com/Miquelpg6/project_2/blob/main/images/violin_chart.png?raw=true)
 
     
 CONCLUSION:

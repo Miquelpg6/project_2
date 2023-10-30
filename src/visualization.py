@@ -39,36 +39,34 @@ def match_heart_rate (merged_df):
     # Show the plot
     plt.xticks(rotation=45)
     plt.tight_layout()
-
-    plt.savefig('images/match_day_heart_evolution.png')
+    
 
 
 def day_hr (df):
    # mitja per dies de la setmana
     sns.boxplot(x="WEEKDAY", y="NORMAL HEART RATE", data=df)
     plt.xlabel('')
-    plt.savefig('images/daily_hr.png')
+    
 
 
-def normal_hr (df_garmin):
-    sns.histplot(x=df_garmin["NORMAL HEART RATE"], bins=20)
+def normal_hr (df):
+    sns.histplot(x=df["NORMAL HEART RATE"], bins=20)
     plt.xlabel('Normal Heart Rate')
     plt.ylabel('')
-    plt.savefig('images/normal_hr_histogram.png')
+    
 
 
-def matchday_hr (merged_df):
-    sns.histplot(x=merged_df["MATCH DAY HEART RATE"], bins=8)
-    plt.savefig('images/matchday_hr_histogram.png')
+def matchday_hr (df):
+    sns.histplot(x=df["MATCH DAY HEART RATE"], bins=8)
+    
 
 
-def join_histplots (df_garmin, merged_df):
+def join_histplots (df_garmin,merged_df):
     # Create a single figure and axis to host the histplots
     fig, ax = plt.subplots()
 
     # Plot the first histplot on the specified axis
     sns.histplot(x=df_garmin["NORMAL HEART RATE"], bins=20, ax=ax)
-
     # Plot the second histplot on the same axis
     sns.histplot(x=merged_df["MATCH DAY HEART RATE"], bins=8, color='orange', ax=ax)
 
@@ -76,7 +74,7 @@ def join_histplots (df_garmin, merged_df):
     ax.set_xlabel("Heart Rate")
     ax.set_ylabel("Frequency")
 
-    plt.savefig('images/normalhr_vs_matchhr.png')
+    
 
 
 def violin_plot (df_garmin, merged_df):
@@ -94,10 +92,6 @@ def violin_plot (df_garmin, merged_df):
 
     # Add legends
     plt.legend()
-
-    # Show the plot
-    plt.savefig('images/violin_chart.png')
-
 
 
 

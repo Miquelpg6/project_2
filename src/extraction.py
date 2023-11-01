@@ -68,8 +68,8 @@ def clean_jornadas (jornadas):
     return jornadas_final
 
 
-def save_dataframe_to_csv(df, file_path, index=False):
-    df.to_csv(file_path, index=index)
+def save_dataframe_to_csv(df, file_path):
+    df.to_csv(file_path, index=False)
 
 
 def federacion():
@@ -85,6 +85,8 @@ def federacion():
     output_dict = {
         "jornada": jornadas_clean,
         "results": results_clean
-    }
+        }
+    
     df = pd.DataFrame(output_dict) 
-    save_dataframe_to_csv(df,'DATA/federacio_sucio.csv', index=False)
+
+    save_dataframe_to_csv (df, 'DATA/federacio_sucio.csv')

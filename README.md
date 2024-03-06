@@ -91,5 +91,5 @@ Now that I had both data frames clean, I proceed to import them into a new noteb
 CONCLUSION:
 
 With this project, I have been able to compare two databases and extract interesting insights. With the comparison of the Garmin Database with the Federacio database, I've seen that there is a slight difference between the normal days and the match days on the average heart rate. The analysis has also been useful to analyze the heart rate in the different days of the week for future analysis. 
-Having said this, as the data of the match days are reduced, we would have to take into consideration a larger set of data of the following years to see if the 
+Having said this, as the data of the match days are reduced, we would have to take into consideration a larger set of data of the following years to see if the trend is actualy true.
 
